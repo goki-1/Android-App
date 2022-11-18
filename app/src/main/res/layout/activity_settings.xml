@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Difficulty Level" />
+
+    <RadioGroup
+        android:id="@+id/difficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/easyBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Easy" />
+
+        <RadioButton
+            android:id="@+id/mediumBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/hardBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:ems="10"
+        android:text="Board Size" />
+
+    <RadioGroup
+        android:id="@+id/sudokuSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/size4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4x4" />
+
+        <RadioButton
+            android:id="@+id/size6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6x6" />
+
+        <RadioButton
+            android:id="@+id/size9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9x9" />
+        <RadioButton
+            android:id="@+id/size12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12x12" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/practicePairs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practice pairs"/>
+
+    <Switch
+        android:id="@+id/colormode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode" />
+
+    <Switch
+        android:id="@+id/translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate pairs" />
+
+    <Button
+        android:id="@+id/button_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Word Bank" />
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        android:textSize="50dp"
+        android:layout_marginBottom="100dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/wins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Win: "
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/highscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highscore: "
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/toptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fastest Time: "
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/leastmoves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Least Moves: "
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/totalmoves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Moves: "
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

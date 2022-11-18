@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wordBankRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="Word banks"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/returnBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backFolder"/>
+
+
+        <Button
+            android:id="@+id/folderBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Folder"/>
+
+        <Button
+            android:id="@+id/fileBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add File"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

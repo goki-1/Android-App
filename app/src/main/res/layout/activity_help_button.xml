@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="190dp"
+      android:layout_weight="0.15"
+      android:background="@color/teal_700"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="@string/help"
+        android:textSize="32sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+  </LinearLayout>
+
+
+  <TextView
+      android:id="@+id/help_textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="51dp"
+      android:baselineAligned="false"
+
+      android:text="  How to Play:\n"
+
+      android:textSize="40sp"
+      tools:ignore="DuplicateIds" />
+
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fillViewport="false"
+      android:scrollbarSize="5dp">
+
+
+    <LinearLayout
+
+        android:baselineAligned="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/help_textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="fill"
+          android:baselineAligned="false"
+
+          android:text="How to play Sudoku: \n\nIf you already know how to play, scroll down and we will let you know what has changed for this app! \n\nSudoku is played on a grid of 9 x 9 spaces. Within the rows and columns are 9 “squares” (made up of 3 x 3 spaces). Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9, without repeating any numbers within the row, column or square. Does it sound complicated? As you can see from the image below of an actual Sudoku grid, each Sudoku grid comes with a few spaces already filled in; the more spaces filled in, the easier the game – the more difficult Sudoku puzzles have very few spaces that are already filled in. As you can see, in the upper left square (circled in blue), this square already has 7 out of the 9 spaces filled in. The only numbers missing from the square are 5 and 6. By seeing which numbers are missing from each square, row, or column, we can use process of elimination and deductive reasoning to decide which numbers need to go in each blank space.
+
+For example, in the upper left square, we know we need to add a 5 and a 6 to be able to complete the square, but based on the neighboring rows and squares we cannot clearly deduce which number to add in which space. This means that we should ignore the upper left square for now, and try to fill in spaces in some other areas of the grid instead. Sudoku is a game of logic and reasoning, so you shouldn’t have to guess. If you don’t know what number to put in a certain space, keep scanning the other areas of the grid until you seen an opportunity to place a number. But don’t try to “force” anything – Sudoku rewards patience, insights, and recognition of patterns, not blind luck or guessing. What is different in this app?: \n\n The idea of this app is to help you practice your chosen language and to do that, we will replace the digits 1 through 9 with nine pairs of words. Each pair of words consists of one word in the user's native language (say English), and one word in the language being studied. Your job is to fill each row, column and 3x3 subgrids with with words from nine distinct word pairs. \n"
+
+          android:textSize="32sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="fill"
+          android:baselineAligned="false"
+          android:text="Initial Board \n\nWhat should we put in the empty box?"
+          android:textSize="45sp" />
+
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:srcCompat="@drawable/iteration2initialscreen" />
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="fill"
+          android:baselineAligned="false"
+
+          android:text="How about a 9!\n\nVictory Board"
+
+          android:textSize="45sp" />
+
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:srcCompat="@drawable/iteration2winscreen" />
+
+      <TextView
+          android:id="@+id/textView5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="fill"
+          android:baselineAligned="false"
+
+          android:text="\n\n\n\n"
+
+          android:textSize="32sp" />
+    </LinearLayout>
+  </ScrollView>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.15"
+      android:background="@color/teal_700"
+      android:gravity="center">
+
+  </LinearLayout>
+
+
+</LinearLayout>
